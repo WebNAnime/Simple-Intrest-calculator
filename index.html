@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="asserts/Logo.png" type="image/x-icon" id="icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Intrest Calculator</title>
+
+</head>
+
+<body>
+    <div class="component">
+        <div class="areaBody">
+            <h3>Developer- SUDARSHAN KARN <br> Simple Intrest Calculator</h3>
+            <div class="inpbox">
+                <input type="number" id="principal" placeholder="Principal"><br><br>
+                <input type="number" id="rate" placeholder="Rate of Intrest "><br><br>
+                <input type=" number" id="time" placeholder="Time period"><br><br>
+
+            </div>
+            <div class="btn">
+                <button id="Simple Intrest" onclick="fun()">Simple Intrest</button>
+                <button id="amount" onclick="fun0()">Amount</button>
+            </div>
+            <div id="ans">...</div>
+        </div>
+    </div>
+
+</body>
+<script>
+    function fun() {
+        let p = document.getElementById('principal').value;
+        let r = document.getElementById('rate').value;
+        let t = document.getElementById('time').value;
+        let ans = document.getElementById('ans');
+        ans.innerHTML = "₹ " + p * r / 100 * t;
+
+
+    }
+    function fun0() {
+        let p = document.getElementById('principal').value;
+        let r = document.getElementById('rate').value;
+        let t = document.getElementById('time').value;
+        let ans = document.getElementById('ans');
+        ans.innerHTML = "₹ " + ((p * r / 100 * t) + Number(p));
+    }
+</script>
+
+</html>

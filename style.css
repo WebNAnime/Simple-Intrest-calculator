@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.897);
+
+}
+
+html {
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+h3 {
+    position: relative;
+    top: -1cm;
+    color: white;
+    font-family: cursive;
+}
+
+input {
+    height: 1cm;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+    border: 0;
+}
+
+.areaBody {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.897);
+    width: fit-content;
+    padding: 2cm 1cm 5cm;
+}
+
+.btn {
+    position: relative;
+    top: 1cm;
+    word-spacing: 1cm;
+}
+
+button {
+    height: 1cm;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+    border: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: aquamarine;
+}
+
+#ans {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: -40px;
+}
+
+@media screen and (max-width: 526px) {
+    input {
+        position: relative;
+        width: 4cm;
+    }
+}
